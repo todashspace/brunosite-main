@@ -313,6 +313,13 @@ a {
     width: 49.4%;
   }
 
+  .right-link {
+    font-size: 14px;
+  }
+
+  .left-link {
+    font-size: 14px;
+  }
 
 }
 
