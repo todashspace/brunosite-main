@@ -245,6 +245,13 @@ a {
     padding-left: 0px;
   }
   
+  .right-link {
+    font-size: 14px;
+  }
+
+  .left-link {
+    font-size: 14px;
+  }
 
 }
 

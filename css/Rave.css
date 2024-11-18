@@ -330,4 +330,15 @@ a {
   #navbar #logo {
     font-size: 20px;
   }
+
+  .right-link {
+    font-size: 14px;
+  }
+
+  .left-link {
+    font-size: 14px;
+  }
+
 }
+
+

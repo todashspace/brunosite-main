@@ -181,7 +181,7 @@ body {
 .left-videos-wrapper {
   display: flex;
   width: 100%;
-  flex-direction: column;
+  flex-direction:row;
   margin-right: 5px;
 }
 
@@ -190,7 +190,7 @@ body {
 }
 
 .left-videos video {
-  width: 100%;
+  width: 49.6%;
 }
 
 .right-video {
@@ -309,6 +309,9 @@ a {
     
   }
 
+  .left-videos video {
+    width: 49.4%;
+  }
 
 
 }

@@ -289,4 +289,12 @@ a {
   .wrapper{
     margin: 100px 10px;
   }
+  .right-link {
+    font-size: 14px;
+  }
+
+  .left-link {
+    font-size: 14px;
+  }
+
 }
