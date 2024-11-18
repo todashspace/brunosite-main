@@ -242,6 +242,30 @@ toggleVideoControls();
 // Also listen for window resize events to apply changes dynamically
 window.addEventListener("resize", toggleVideoControls);
 
+// Array of colors for the overlay
+const colors = ['#FF5733', '#00de27', '#3357FF', '#FF33FF']; // Add your preferred colors here
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Select all img-wrapper elements in the gallery
+  const galleryItems = document.querySelectorAll('.img-wrapper');
+
+  galleryItems.forEach(item => {
+    const caption = item.querySelector('figcaption'); // Find the caption within each gallery item
+    
+    // Add event listener for hover
+    item.addEventListener('mouseenter', () => {
+      // Pick a random color from the array
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      caption.style.backgroundColor = randomColor; // Apply the random background color
+    });
+
+    // Reset to the default background color when mouse leaves
+    item.addEventListener('mouseleave', () => {
+      caption.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; // Reset to default overlay color
+    });
+  });
+});
+
 
 </script>
 

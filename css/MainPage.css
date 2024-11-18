@@ -222,6 +222,9 @@ hr {
   
 }
 
+
+
+
 /*
 =Caption Overlay
 ============================================= */
@@ -257,8 +260,21 @@ style the figcaption */
   color: white;
   border-radius: 15px;
   height: auto;
+  opacity: .84;
 }
 
+figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5); /* Default overlay */
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease, background-color 0.3s ease;
+  border-radius: 15px;
+}
 
 
 
