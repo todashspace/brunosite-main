@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="css/about.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title> bruno martinez:design </title>
+
+</head>
+<body>
+
+<!-- navbar  -->
+  
+<div class="navbar-wrapper">
+
+  <div id="navbar">
+    <div class= "navbar-text-wrapper">
+      <a href="MainPage.html" id="logo">bruno martinez:<span id="thin">about</span></a>
+
+      <div id="navbar-right">
+        <!-- <a href="#home">portfolio</a> -->
+        <a href="MainPage.html">portfolio</a>
+        
+        <!-- <a href="#about">about</a> -->
+        <a class="active" href="about.html">
+            about
+        </a>
+        
+          
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- wrapper for everything under -->
+<div class="wrapper">
+
+    <!-- style the div -->
+    <div class="bio-text">
+      <h1> hi, i'm bruno :3 </h1>
+      <p class="biobio"> I'm a graphic designer, animator, and motion graphic artist based out of Chicago. Currently, I'm in my third year at The School of The Art Institute of Chicago, focusing on visual communications. </p>
+
+      <p class="restofbio"> Outside of school, I do freelance projects mainly for people in different dance music scenes across the country. I love hardcore dance music, and I DJ
+      at raves and make music in my free time.
+      </p>
+
+      <p class="restofbio"> I also love video games and anime, and they're a big source of inspiration for my work. I'm currently watching DanDaDan and fire force, and playing Dragonball Sparking! Zero.
+      </p>
+
+      <p class="restofbio"> To contact me for any projects or inquiries, please reach out to <span id="boldaf">bruno.mrtz.silva@gmail.com </span> , or reach me at <span id="boldaf">(281)-660-0218</span>. I'm always excited to take on new work in any field!
+      </p>
+    
+    
+    
+    </div>
+    
+    <div class="banner-wrapper">
+      <div class="banner">
+        <img src="ref/aboutpage.png">
+      </div>
+    </div>
+
+    
+    
+    
+      
+    </div>`
+</div>
+    
+
+<script>
+// Store the initial width of the window
+let initialWidth = window.innerWidth;
+
+// Function to handle resize
+function handleResize() {
+  // Get the current window width
+  let currentWidth = window.innerWidth;
+
+  // Check if the window width is less than 580px
+  if (currentWidth < 580) {
+    document.getElementById("logo").style.fontSize = "20px"; // Change font size when smaller than 580px
+  } else {
+    document.getElementById("logo").style.fontSize = "35px"; // Reset font size to the original when above 580px
+  }
+  
+}
+
+// Attach the resize event listener to the window
+window.addEventListener("resize", handleResize);
+
+// Initial call to handle the current size when the page loads
+handleResize();
+
+// Scroll function remains the same, only changing padding and opacity if the screen width is larger than 580px
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  let currentWidth = window.innerWidth;
+
+  // Only apply the padding and opacity changes if the width is above 580px
+  if (currentWidth >= 580) {
+    if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+      document.getElementById("navbar").style.padding = "0px 0px";
+      document.getElementById("logo").style.fontSize = "25px";
+      // The font size won't change due to scroll anymore
+    } else {
+      document.getElementById("navbar").style.padding = "20px 0px";
+      document.getElementById("logo").style.fontSize = "35px";
+    }  
+  }
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+      document.getElementById("navbar").style.opacity = "0%";
+    } else {
+      document.getElementById("navbar").style.opacity = "100%";
+    }
+}
+
+</script>
+
+</body>
+</html>

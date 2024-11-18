@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="css/MainPage.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title> bruno martinez:design </title>
+
+</head>
+<body>
+
+<!-- navbar  -->
+  
+<div class="navbar-wrapper">
+
+  <div id="navbar">
+    <div class= "navbar-text-wrapper">
+      <a href="MainPage.html" id="logo">bruno martinez:<span id="thin">design</span></a>
+
+      <div id="navbar-right">
+        <a class="active" href="#home">portfolio</a>
+        
+        <!-- <a href="#about">about</a> -->
+        <a href="about.html">
+            about
+        </a>
+        
+        
+        <!-- <a href="contact.html">contact</a>       -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- video -->
+<div class="video-wrapper">
+    <video class="video" loop="" autoplay="" muted="" src="ref/newmainvid.mp4"></video>
+</div>    
+
+
+<!-- wrapper for everything under -->
+<div class="wrapper">
+
+    <!-- style the div -->
+    <div>
+     <h1> design work:<span id="thin">recents </span></h1>
+
+     <!-- horizontal rule -->
+    <!-- <hr width="99.8% size=2;"> -->
+
+     <!-- IMAGE GALLERY -->
+    <div class="img-gallery">
+			
+      <div class="row-one">
+      <figure class="img-wrapper">
+          <a href="DavidSmith.html">
+          <img src="ref/davidsmithbookcover.png" alt="…">
+          <figcaption>David Smith book</figcaption>
+          </a>
+       </figure>
+      
+       <figure class="img-wrapper">
+         <a href="MomaPoster.html">
+         <img src="ref/Momapic.png" alt="…">
+         <figcaption>MoMA Exhibition</figcaption>
+         </a>
+        </figure>
+            
+        <figure class="img-wrapper">
+          <a href="AquaTower.html">
+          <img src="ref/aquatowermain.png" alt="…">
+          <figcaption>Aqua Tower</figcaption>
+          </a>
+        </figure>
+  
+      </div>
+
+      <div class="row-two">
+        <figure class="img-wrapper">
+            <a href="Meowballz.html">
+            <img src="ref/mb radio-1.jpg" alt="…">
+            <figcaption>MB radio</figcaption>
+            </a>
+        </figure>
+      
+
+        <figure class="img-wrapper">
+          <a href="MAKEbook.html">
+          <img src="ref/coverformake.png" alt="…">
+          <figcaption>MAKE book</figcaption>
+          </a>
+      </figure>    
+        
+        <figure class="img-wrapper">
+            <img src="ref/jiwonversionfuckit.png" alt="…">
+            <a href="BioluminescentAlgae.html">
+            <figcaption>Algae Infographic</figcaption>
+            </a>
+        </figure>
+  
+      </div>
+        
+      <div class="row-three">
+        <figure class="img-wrapper">
+            <img src="ref/ravetilludieneue2.png" alt="…">
+            <a href="Rave.html">
+            <figcaption>Rave 'Til You Die</figcaption>
+            </a>
+        </figure>
+
+        <figure class="img-wrapper">
+          <a href="ChinatownBook.html">
+          <img src="ref/ChinaTownCover.png" alt="…">
+          <figcaption>Neighborhood Book</figcaption>
+          </a>
+      </figure>
+
+      <figure class="img-wrapper">
+        <a href="City.html">
+        <img src="ref/citycover.png" alt="…">
+        <figcaption>cityscapes</figcaption>
+        </a>
+      </figure>
+    
+      <figure class="img-wrapper">
+        <a href="myorange.html">
+        <img src="ref/orangeheart1.jpg" alt="…">
+        <figcaption>cityscapes</figcaption>
+        </a>
+      </figure>
+    
+    
+    
+    
+    </div>
+
+    </div>
+    <!-- END Image Gallery -->
+  
+    
+    <!-- <div>
+      <h1> motion graphics:<span id="thin">recents </span></h1>
+
+      <div class="img-gallery">
+			
+        <figure class="img-wrapper">
+           <a href="DavidSmith.html">
+           <img src="ref/davidsmithbookcover.png" alt="…">
+           <figcaption>David Smith book</figcaption>
+           </a>
+        </figure>
+       
+        <figure class="img-wrapper">
+          <a href="MomaPoster.html">
+          <img src="ref/Momapic.png" alt="…">
+          <figcaption>MoMA Exhibition</figcaption>
+          </a>
+         </figure>
+    
+    
+    
+    </div> -->
+
+<script>
+// Store the initial width of the window
+let initialWidth = window.innerWidth;
+
+// Function to handle resize
+function handleResize() {
+  // Get the current window width
+  let currentWidth = window.innerWidth;
+
+  // Check if the window width is less than 580px
+  if (currentWidth < 580) {
+    document.getElementById("logo").style.fontSize = "20px"; // Change font size when smaller than 580px
+  } else {
+    document.getElementById("logo").style.fontSize = "35px"; // Reset font size to the original when above 580px
+  }
+  
+}
+
+// Attach the resize event listener to the window
+window.addEventListener("resize", handleResize);
+
+// Initial call to handle the current size when the page loads
+handleResize();
+
+// Scroll function remains the same, only changing padding and opacity if the screen width is larger than 580px
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  let currentWidth = window.innerWidth;
+
+  // Only apply the padding and opacity changes if the width is above 580px
+  if (currentWidth >= 580) {
+    if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+      document.getElementById("navbar").style.padding = "0px 0px";
+      document.getElementById("logo").style.fontSize = "25px";
+      // The font size won't change due to scroll anymore
+    } else {
+      document.getElementById("navbar").style.padding = "20px 0px";
+      document.getElementById("logo").style.fontSize = "35px";
+    }  
+  }
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+      document.getElementById("navbar").style.opacity = "0%";
+    } else {
+      document.getElementById("navbar").style.opacity = "100%";
+    }
+}
+
+</script>
+
+</body>
+</html>
