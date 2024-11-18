@@ -272,6 +272,26 @@ h3 {
   
 }
 
+.switcher-wrapper{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+
+
+}
+
+a:visited {
+  color: inherit; /* Or any other color you'd prefer */
+}
+
+/* Remove the default blue underline for unvisited links */
+a {
+  text-decoration: none; /* To remove the underline */
+  color: inherit; /* Set color to default text color or any color you choose */
+}
+
+
 
 
 
