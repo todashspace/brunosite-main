@@ -102,6 +102,7 @@ body {
   max-width: 1200px;
   min-height: 100vh;
   margin: 100px auto;
+  flex-direction: column;
 }
 
 
@@ -186,7 +187,7 @@ hr {
 .img-gallery {
   display: flex;
   flex-wrap: wrap;
-  margin: 30px -5px 100px;
+  margin: 30px -5px 0px;
   width: 100%;
 
   
@@ -307,6 +308,17 @@ style the figcaption */
   display:flex;
   flex-direction: column;
   width: 33%;
+}
+
+
+.footer{
+  width:100%;
+  display:flex;
+  margin-top:20px;
+}
+
+.footer img{
+  width:100%
 }
 
 @media screen and (max-width: 580px) {

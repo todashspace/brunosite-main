@@ -101,7 +101,7 @@ body {
   display: flex;
   max-width: 1200px;
   min-height: 100vh;
-  margin: 100px auto;
+  margin: 100px auto 0px;
   justify-content: space-between;
   
 }
@@ -125,12 +125,15 @@ hr {
 .biobio {
   margin-top:50px;
   line-height: 22px;
+  font-weight: 200;
+  margin-right:50px;
 }
 
 .restofbio {
   margin-top: 30px;
   line-height: 22px;
-  margin-right: 20px;
+  margin-right: 50px;
+  font-weight: 200;
 }
 
 
@@ -339,7 +342,7 @@ style the figcaption */
 
 .bio-text {
    width: 50%;
-   margin-right: 20px;
+   margin-right: 50px;
 }
 
 #boldaf {
@@ -399,6 +402,7 @@ h1 {
 .restofbio {
   font-size: 12px;
   line-height: 16px;
+  margin-right: 0px;
 }
 
 .biobio {
@@ -418,6 +422,7 @@ h1 {
 
 .bio-text {
   width: 100%;
+  margin-right: 0px;
 }
 
 }

@@ -109,9 +109,9 @@
         
         <div class="left-videos-wrapper">
           <div class="left-videos">
-            <video loop="" autoplay="" muted="" src="ref/ravevisuals1.mp4" type="video/mp4">
+            <video class="pleasework" loop autoplay muted src="ref/ravevisuals1.mp4" type="video/mp4">
             </video>
-            <video loop="" autoplay="" muted="" src="ref/ravevisuals2.mp4" type="video/mp4">
+            <video class="pleasework" loop autoplay muted src="ref/ravevisuals2.mp4" type="video/mp4">
             </video>
             
           </div>
@@ -149,6 +149,29 @@
       document.getElementById("navbar").style.opacity = "100%";
     }
   }
+
+  // Function to toggle video attributes based on screen size
+function toggleVideoControls() {
+  // Get all videos with the class "responsive-video"
+  const videos = document.querySelectorAll(".pleasework");
+
+  videos.forEach(video => {
+    if (window.innerWidth <= 568) { // Check if the screen width is 768px or smaller (phone size)
+      video.removeAttribute('autoplay'); // Remove autoplay for smaller screens
+      video.setAttribute('controls', ''); // Add controls for smaller screens
+    } else {
+      video.setAttribute('autoplay', ''); // Re-enable autoplay for larger screens
+      video.removeAttribute('controls'); // Remove controls for larger screens
+    }
+  });
+}
+
+// Call the function initially
+toggleVideoControls();
+
+// Also listen for window resize events to apply changes dynamically
+window.addEventListener("resize", toggleVideoControls);
+
   </script>
 
 
