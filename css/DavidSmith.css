@@ -239,6 +239,7 @@ h3 {
   #navbar-right {
     float: none;
   }
+  
   .final-images img{
     width: 100%;
   }
@@ -258,6 +259,6 @@ h3 {
     width: 100%;
   }
   #navbar #logo {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
