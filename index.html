@@ -18,10 +18,10 @@
 
   <div id="navbar">
     <div class= "navbar-text-wrapper">
-      <a href="MainPage.html" id="logo">bruno martinez:<span id="thin">design</span></a>
+      <a href="index.html" id="logo">bruno martinez:<span id="thin">design</span></a>
 
       <div id="navbar-right">
-        <a class="active" href="#home">portfolio</a>
+        <a class="active" href="index.html">portfolio</a>
         
         <!-- <a href="#about">about</a> -->
         <a href="about.html">
@@ -37,7 +37,7 @@
 
 <!-- video -->
 <div class="video-wrapper">
-    <video class="video" loop="" autoplay="" muted="" src="ref/newmainvid.mp4"></video>
+    <video class="video" loop autoplay muted src="ref/newmainvid.mp4"></video>
 </div>    
 
 
@@ -47,6 +47,7 @@
     <!-- style the div -->
     <div>
      <h1> design work:<span id="thin">recents </span></h1>
+     </div>
 
      <!-- horizontal rule -->
     <!-- <hr width="99.8% size=2;"> -->
@@ -128,16 +129,23 @@
       <figure class="img-wrapper">
         <a href="myorange.html">
         <img src="ref/orangeheart1.jpg" alt="…">
-        <figcaption>cityscapes</figcaption>
+        <figcaption>my orange heart</figcaption>
         </a>
       </figure>
-    
-    
-    
-    
+     </div>
     </div>
+    
+     
 
-    </div>
+
+
+  </div>
+
+  <div class="footer">
+    <img src="ref/finalfooter.png">
+    
+    
+ </div>
     <!-- END Image Gallery -->
   
     
@@ -211,6 +219,29 @@ function scrollFunction() {
       document.getElementById("navbar").style.opacity = "100%";
     }
 }
+
+  // Function to toggle video attributes based on screen size
+  function toggleVideoControls() {
+  // Get all videos with the class "responsive-video"
+  const videos = document.querySelectorAll(".video");
+
+  videos.forEach(video => {
+    if (window.innerWidth <= 568) { // Check if the screen width is 768px or smaller (phone size)
+      video.removeAttribute('autoplay'); // Remove autoplay for smaller screens
+      video.setAttribute('controls', ''); // Add controls for smaller screens
+    } else {
+      video.setAttribute('autoplay', ''); // Re-enable autoplay for larger screens
+      video.removeAttribute('controls'); // Remove controls for larger screens
+    }
+  });
+}
+
+// Call the function initially
+toggleVideoControls();
+
+// Also listen for window resize events to apply changes dynamically
+window.addEventListener("resize", toggleVideoControls);
+
 
 </script>
 
