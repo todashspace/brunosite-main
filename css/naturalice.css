@@ -448,7 +448,7 @@ p {
 }
 
 .boxcan-swatch img {
-  width: 23%;
+  width: 100%;
   height: auto;
 }
 
@@ -537,21 +537,7 @@ a {
   
   p {
     font-size: 6px;
+    
   }
 
-  .boxcan-swatch {
-    width: 30%;
-    display: flex;
-    gap: 2px;
-    justify-content: flex-end;
-  }
-
-  .boxcan-swatch img{
-    width: 24%;
-    height: auto;
-  }
-
-  .boxcan3left-banner-text{
-    margin-bottom: -10px;
-  }
 }
