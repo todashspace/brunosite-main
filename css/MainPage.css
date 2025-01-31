@@ -113,6 +113,7 @@ body {
 
 h1 {
   font-size: 20px;
+  margin-left: 5px;
 }
 
 hr {
@@ -187,7 +188,7 @@ hr {
 .img-gallery {
   display: flex;
   flex-wrap: wrap;
-  margin: 30px -5px 0px;
+  margin: 30px 0px 0px;
   width: 100%;
 
   
@@ -323,7 +324,7 @@ figcaption {
 .row-three {
   display:flex;
   flex-direction: column;
-  width: 33%;
+  width: 33.33%;
 }
 
 
