@@ -54,7 +54,7 @@
 
       <!-- description  -->
       <h1 class="title">
-        moma_exhibit: <span id="thin"> project overview </span>
+        mb_radio: <span id="thin"> project overview </span>
       </h1> 
 
       <p class="class"> freelance work, october 2023-ongoing </p>
@@ -96,7 +96,7 @@
 
 
         <div class="right-video">
-        <video muted autoplay src="ref/useforwebsite.mp4" type="video/mp4">
+        <video class="pleasework" loop muted autoplay src="ref/useforwebsite.mp4" type="video/mp4">
         </video>
         </div>
           
@@ -112,7 +112,7 @@
       
       
       <div class="bottom-video">
-        <video muted autoplay src="ref/shortoliclip.mp4" type="video/mp4">
+        <video class="pleasework" loop muted autoplay src="ref/shortoliclip.mp4" type="video/mp4">
         </video>
       </div>
     
@@ -154,6 +154,28 @@
       document.getElementById("navbar").style.opacity = "100%";
     }
   }
+
+   // Function to toggle video attributes based on screen size
+function toggleVideoControls() {
+  // Get all videos with the class "responsive-video"
+  const videos = document.querySelectorAll(".pleasework");
+
+  videos.forEach(video => {
+    if (window.innerWidth <= 568) { // Check if the screen width is 768px or smaller (phone size)
+      video.removeAttribute('autoplay'); // Remove autoplay for smaller screens
+      video.setAttribute('controls', ''); // Add controls for smaller screens
+    } else {
+      video.setAttribute('autoplay', ''); // Re-enable autoplay for larger screens
+      video.removeAttribute('controls'); // Remove controls for larger screens
+    }
+  });
+}
+
+// Call the function initially
+toggleVideoControls();
+
+// Also listen for window resize events to apply changes dynamically
+window.addEventListener("resize", toggleVideoControls);
   </script>
 
 

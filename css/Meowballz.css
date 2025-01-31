@@ -165,7 +165,7 @@ body {
   font-weight: 100;
   line-height: 130%;
   flex: 1;
-  padding-right: 20px;
+  /* padding-right: 20px; */
 }
 
 .body-images {
